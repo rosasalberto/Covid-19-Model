@@ -1,5 +1,6 @@
-# Covid-19_model
-New covid-19 model.
+# New Covid-19_model
+
+[![System Equations](https://github.com/rosasalberto/Covid-19_model/blob/master/images/equations.PNG)]
 
 > Based on the SIR model, but with additions of:
 >  
