@@ -61,7 +61,12 @@ class SIR_model_adapted:
         """
         system_control = government actions in the coming n days, list with values between 0 and 1.
         """
-        Tr = [] #tr vector to return
+        S = self.S.copy()
+        I = self.I.copy()
+        R = self.R.copy()
+        D = self.D.copy()
+        Oi = self.Oi.copy()
+        Tr = [] 
         
         for day in range(len(system_control)):
             
@@ -75,13 +80,13 @@ class SIR_model_adapted:
             
             oi = float(I[-self.a]) * self.inf_test
             
-            self.S.append(s)
-            self.I.append(i)
-            self.R.append(r)
-            self.D.append(d)
-            self.Oi.append(oi)
+            S.append(s)
+            I.append(i)
+            R.append(r)
+            D.append(d)
+            Oi.append(oi)
             Tr.append(tr)
             
-        y = [self.S,self.I,self.R,self.D,self.Oi,Tr]
+        y = [S,I,R,D,Oi,Tr]
         
         return y
