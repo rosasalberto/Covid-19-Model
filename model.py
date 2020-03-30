@@ -4,7 +4,7 @@ Created on Fri Mar 27 03:43:46 2020
 
 @author: arosasga
 """
-from spain_data import S,I,R,D,Oi,tr
+from spain_data import S,I,R,D,Oi
 
 class SIR_model_adapted:
     
@@ -54,7 +54,6 @@ class SIR_model_adapted:
         self.R = R
         self.D = D
         self.Oi = Oi
-        self.tr = tr
         
     def run(self, system_control):
         
