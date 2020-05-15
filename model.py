@@ -6,7 +6,7 @@ Created on Fri Mar 27 03:43:46 2020
 """
 from spain_data import S,I,R,D,Oi
 
-class SIR_model_adapted:
+class SIRModelAdapted:
     
     
     def __init__(self, a, b, mintr, maxtr, rr, mindr, maxdr, icol, inf_test):
